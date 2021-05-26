@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lizard Coloring
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mason"
+  },
+  "headline": "Lizard Coloring",
+  "datePublished": "2021-05-26",
+  "image": "https://i.pinimg.com/originals/6a/db/80/6adb807a0e1a7d8c5f75af4a299cb825.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Free Coloring Image",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=lizard+coloring",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Lizard Coloring
+            </a>
+        </h1>
+        <p>
+                            Free Coloring Image Discuss Find Inpiraion for Education.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Lizard Coloring</strong>. Download and print these Pictures Of Lizards To Color coloring pages for free. Hazel green to topaz gold.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/34/13/ef/3413ef8c55dcb407de4c2b6baa05d369.jpg" alt="Desert Lizard Coloring Pages New Coloring Pages Online Coloring Pages Animal Coloring Pages Coloring Pages" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoq6m2ERgWXSbtpSYHmVzYxscS3a8P4s7DeUv2wBuJPQ0_q15C4WxDGrp2n_X8OKvN5mU';">
+        <figcaption>Desert Lizard Coloring Pages New Coloring Pages Online Coloring Pages Animal Coloring Pages Coloring Pages from sk.pinterest.com</figcaption>
+    </figure>
+        <p>
+        The scales on the lizard. Geckos Iguanas and Chameleons oh my. You can use our amazing online tool to color and edit the following Lizard Coloring Pages.
+    </p>
+    <h3>Choose lizard coloring pages and color it with crayons or felt-tip pens with your friends.</h3>
+    <p>Hazel green to topaz gold. Choose lizard coloring pages and color it with crayons or felt-tip pens with your friends. If you have assumed that lizards like Chameleons simply change their color for camouflage then this understandable because. 04052021 Lizard Coloring Pages.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lizard Coloring Pages To Print" src="https://i.pinimg.com/originals/f4/17/9b/f4179b34b7adbf49f643f6d92159b450.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0Bae9HmxrK9MSooPB1kqg2A_c9NrmdNLRdhwIgMQDJNvayQ9JIIy90xOftokN30hYzg';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Choose lizard coloring pages and color it with crayons or felt-tip pens with your friends.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin Auf Diy Decor Ideas" src="https://i.pinimg.com/736x/13/03/48/1303481f97818c23c71f7e6a4ab6c6ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSonAXx8rVdAhUQnJElBLXJ078s1HVqU9P2rg9m8kDOWUiEImctuoACURcvLDLsH59m2k8';" />
+        <small>Source: ar.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>If you like animals you can print out these animal drawings then color it.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Printable Lizard Coloring Pages For Kids Coloring Pages For Kids Animal Coloring Pages Cartoon Lizard" src="https://i.pinimg.com/originals/5e/88/0a/5e880ac3f637916d7688d56cc8320da4.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncDTidiebIp7iOncaG6c-oxpLtKSZq1QuNPn8bMbakMOP8j9V5GaSZGHf_1PwKKcYId4';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Geckos Iguanas and Chameleons oh my.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Desert Lizard Coloring Pages New Coloring Pages Online Coloring Pages Animal Coloring Pages Coloring Pages" src="https://i.pinimg.com/originals/34/13/ef/3413ef8c55dcb407de4c2b6baa05d369.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoq6m2ERgWXSbtpSYHmVzYxscS3a8P4s7DeUv2wBuJPQ0_q15C4WxDGrp2n_X8OKvN5mU';" />
+        <small>Source: sk.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Find more coloring pages.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pets Online Coloring Pages Page 1 Animal Coloring Books Coloring Pages Online Coloring Pages" src="https://i.pinimg.com/originals/f1/7c/d3/f17cd3cf943d149b99b8092bf291cce7.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf5VxkujOfxd7PCmaTaBCowljHrnpgY79huhGxEC1TFU0C4-bFGVlzI-JSO0-GieVZ3Q';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>If you like animals you can print out these animal drawings then color it.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Animal Drawings Coloring Pages Monitor Lizard Animal Identification Drawing And Coloring Pages Animal Drawings Animal Coloring Pages Snake Coloring Pages" src="https://i.pinimg.com/originals/9b/2b/58/9b2b58b898f0cdd9cb1ff8b6000972dc.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0rcsW8JOpL8qzjmKAmUyF1Xh2cSk9qPRDii4e8sScIRA81-DX-hnBZZNLX7ESYbbI5s';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>A large collection of coloring pages featuring lizards will delight your children.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Printable Lizard Coloring Pages For Kids Cartoon Lizard Dragon Coloring Page Animal Coloring Pages" src="https://i.pinimg.com/originals/d9/ea/3c/d9ea3cb796047a5a89e2fc584419b8aa.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZfc_JceF9Guz4Q76pvlvHyx0Z7-iV98y3ynO9zSIv5ctjEcfwGjwE9WpU9SPEZVP0NM';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>As a Dragon Hybrid my eyes will change color.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Lizard Coloring Page Coloring Pages Iguana Lizard" src="https://i.pinimg.com/originals/02/ca/04/02ca043e749d6f9a36204ebfc1e1e929.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn9pH6aBAn8UGqnkDr6zkfRj4tkCbXF8ayFThqILwbdFsb3yDsz-H2C-2XtuFWothbxP4';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Pictures Of Lizards To Color coloring pages are a fun way for kids of all ages to develop creativity focus motor skills and color recognition.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Printable Lizard Coloring Pages For Kids Dragon Coloring Page Star Coloring Pages Animal Coloring Pages" src="https://i.pinimg.com/originals/68/d5/16/68d516bb8fd805cc3a69589836ba2522.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTddC8aWE-o9QxgAE1c381Jzpp41sGEb0SriweU7-fb6lVWIdH6y3xGm9PyVmT8blFxbDo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>If you like animals you can print out these animal drawings then color it.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/descendants-coloring-pages.html"><i>&larr; descendants coloring pages</i></a>
+                                                                    
+                                        <a href="/coloring-worksheets-for-kids.html"><i>coloring worksheets for kids &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4550379,4,1,120,40,00010100']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4550379&101" alt="counter hit make" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://www.achievablecpmrevenue.com/w4cv6agf?key=67b97f670ac94da11cbf9b0990a19d51', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Coloring Game
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mason"
+  },
+  "headline": "Coloring Game",
+  "datePublished": "2021-05-26",
+  "image": "https://i.pinimg.com/736x/60/75/21/6075215aa5e80f1fbf248dfdc3a75c2d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Free Coloring Image",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=coloring+game",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Coloring Game
+            </a>
+        </h1>
+        <p>
+                            Free Coloring Image Discuss Find Inpiraion for Education.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Coloring Game</strong>. Es gibt so viele farbenfrohe atemberaubende Bilder zum Ausmalen. Highlighting the coloring area only.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ca/ae/a1/caaea1030d81553d505a0fe49e755138.jpg" alt="Free Printable Mario Coloring Pages For Kids Abstract Coloring Pages Mario Coloring Pages Super Mario Coloring Pages" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvXeovL42DToGHOST2ofiMMFh-7WqH30bSd-ktnOJQ2_N_O03ZFyKaZoYJDQu3iKsGCn8';">
+        <figcaption>Free Printable Mario Coloring Pages For Kids Abstract Coloring Pages Mario Coloring Pages Super Mario Coloring Pages from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Let your imagination flow with our fun coloring games. 0 - different colors 100 - the colors are identical. Highlighting the coloring area only.
+    </p>
+    <h3>Highlighting the coloring area only.</h3>
+    <p>Explore the world of Disney Disney Pixar and Star Wars with these free coloring pages for kids. There are 741 Coloring games on 4JCom such as Bts Apple Coloring Book Color Pixel Art Classic and Shimmer And Shine Coloring Book. All of these games can be played online directly without register or download needed. 31012020 You can modify lots of retro pixel art in this online painting game.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Printable Baby Shark Coloring Pages For Kids In 2021 Shark Coloring Pages Family Coloring Pages Baby Coloring Pages" src="https://i.pinimg.com/736x/65/39/08/653908a06f8053b1a015cc4eb8d00ab9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVd5Ev0jZMye2PH-vQ9Xp8DQp-BtkzhXxk9gxdSykD6PtI7Y7RugnCCuFCWOdZza_QEM';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Enjoy a big collection of things to color in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Yoko And His Friends 8 Printable Coloring Pages For Kids Online Coloring Pages Coloring Pages For Kids Coloring Pages" src="https://i.pinimg.com/736x/77/40/22/77402270248900cc6fa482ec54f28284.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbiumb3j6gxYA7YKPP_advU2AyHjoL968jhABTjmYD04dwVfgIu_KsH9zOQnWJUsbaRYo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Try out all sorts of colors and even different types of brushes.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Printable Cuphead Coloring Pages Free Coloring Sheets Coloring Pages Cartoon Coloring Pages Printable Coloring Pages" src="https://i.pinimg.com/736x/a3/00/cd/a300cd7c1f02bedd35653141f632192f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQJW5TJiiTX0-HmTav0D_VxGEXvHYV76T98tsLFJ5GK7p85OxYhcXNoGdZBayYVFRNJM';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Online coloring games for kids that encourage creativity and art skills.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Coloring Game Jungle Adventure Board Game Printable Game Etsy Jungle Adventure Coloring Pages Color Games" src="https://i.pinimg.com/736x/42/7b/04/427b0400a218359dbac89818a1be4d39.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQpqgfkJ1II3xBnn_VuKmRUP4tyX5pEBMWh63tOkVa_E_1ACmF7WahNdlv30tCOcxCqn0';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The Fill tool provides new opportunities for coloring images.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Printable Splatoon Coloring Pages Free Coloring Sheets Free Printable Coloring Pages Coloring Pages Printable Coloring Pages" src="https://i.pinimg.com/736x/b7/02/4d/b7024d4556828e2f4ac0a7fa73059881.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1nNiM_x4H0-Mu_jmUH-E6jh9N3Qu-VdFJYZGHPat-xbrtct0oH5KnWJPSeKeONZicfPI';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Coloring games are the ultimate kids games.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ralph Breaks The Internet Coloring Pages Free Printables Cartoon Coloring Pages Disney Coloring Pages Princess Coloring Pages" src="https://i.pinimg.com/736x/60/75/21/6075215aa5e80f1fbf248dfdc3a75c2d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdOE7Z3DDICnh5xQ-FB3ZudM5VBJH_Q-PvvZGrjrz0S8PEIxz6fYt9KtJxvv6dTBCJE_c';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Just click on the colored circles to create your mix.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Easy To Print Mario Coloring Page Super Mario Coloring Pages Pokemon Coloring Pages Mario Coloring Pages" src="https://i.pinimg.com/originals/73/27/50/7327502f85bf6f8b79b2d74b56c1dc67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjhgyyktJpZMnkeeDvgh0RY6qqRHb1JF12vQ5M5MW2KB3mX5P0ULdvHWeXOeB4urws8xA';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The picture gets animated when the level is completed.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Best Cute Coloring Game Among Us For Kids Coloring For Kids Christmas Unicorn Coloring Apps" src="https://i.pinimg.com/originals/8f/ea/4d/8fea4d7b1656b6d06dc9599bdfab39da.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjxBNxQD6OJ2iFe1A4vV5RCqDb5EusfB6mBXJzXk2XJGvOu_6Ns8613-wNjJY4pYLM5KI';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>One of the greatest benefits of online coloring games is that its clean and easy for parents to manage.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Printable Blaze And The Monster Machines Coloring Pages Free Coloring Sheets Monster Truck Coloring Pages Truck Coloring Pages Cartoon Coloring Pages" src="https://i.pinimg.com/736x/7e/b4/8d/7eb48dd720c865e92ca63001f2565dbf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgnjlU3iERtUApFc_cdI8u6vsDfurYSU_j7m_PAXNUjYPE1Szb7M1ktEUQ1qxKPBZ5Ng';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>We have picked the best Coloring games which you can play online for free.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/rabbit-colouring.html"><i>&larr; rabbit colouring</i></a>
+                                                                    
+                                        <a href="/robot-colouring.html"><i>robot colouring &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4550379,4,1,120,40,00010100']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4550379&101" alt="counter hit make" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://www.achievablecpmrevenue.com/w4cv6agf?key=67b97f670ac94da11cbf9b0990a19d51', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Banana Coloring
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mason"
+  },
+  "headline": "Banana Coloring",
+  "datePublished": "2021-05-26",
+  "image": "https://i.pinimg.com/originals/5b/bf/eb/5bbfeb0ecc1aee290125958c4d283d28.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Free Coloring Image",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=banana+coloring",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Banana Coloring
+            </a>
+        </h1>
+        <p>
+                            Free Coloring Image Discuss Find Inpiraion for Education.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Banana Coloring</strong>. The banana is a herb not a palm tree. 16 best Fruits images on Pinterest.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/61/ac/48/61ac48b1dddbacd8accc7e3895a09ed8.png" alt="Pin Oleh Alina Paterska Di Banana Coloring Pages Halaman Mewarnai Buah Buku Mewarnai" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkmEDHL0EUH6L7emrX81Rf2EAqt8Wh0nDXOom1niN6ljEjDZCKf4zYlm3g2s4IM8JrFo';">
+        <figcaption>Pin Oleh Alina Paterska Di Banana Coloring Pages Halaman Mewarnai Buah Buku Mewarnai from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Interactive experience of fruits coloring pages. Download and print for free. Banana Outline Drawing at GetDrawings.
+    </p>
+    <h3>Find this Pin and more on science fairby Sandra Shannon.</h3>
+    <p>Humans love bananas and so do monkeys. Bananas are great tasting easy to eat and come in their own package. It is roasted added to baked goods desserts and juices. Banana Fruit Kids Coloring Book.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Coloriage Banane Img 9550 Kleurplaten Banaan Afbeeldingen" src="https://i.pinimg.com/originals/7d/3d/42/7d3d425ed13324aadf552c758a6245cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ5VZLRoJDcV3XRpru4PyaE4hcoPBOADN-LtmXUDRMWrLhWz3Z-beFGy5tNaFlCdzGD3Y';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Banana coloring pages are a fun way for kids of all ages to develop creativity focus motor skills and color.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bouquet De Bananes Coloriage Fruit Coloring Pages Coloring Pages Cars Coloring Pages" src="https://i.pinimg.com/originals/38/09/86/380986d9c3f6fdd426b790585aa4ad86.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSIlrlIrG9h54ap_kFc8rk7smKyVhVAXph4P9ocrQ9R2ENBZ-rFIGoTKkx1fKfCVE7Vv0';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>16 best Fruits images on Pinterest.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Banana Color Page Banana Color Page Banana Coloring Pages Print Fruit Coloring Pages Coloring Pages For Kids Coloring Pages" src="https://i.pinimg.com/originals/32/e2/29/32e22914a3cda320e24781f9cb9baa41.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn06N490f8xmeFeB1pJHydf7LFqJol3Gqpqoherf6ZnCfwVoEbCkYSz1yry4j2-x2pcWc';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>27022019 Banana Coloring Pages are a good way to teach your kids about fruit and colors.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Coloring Page Banana Coloring Page Template Printing Printable Food Banana Coloring Pages For Kids Banana Crafts Nature Drawing For Kids Easy Coloring Pages" src="https://i.pinimg.com/originals/5b/bf/eb/5bbfeb0ecc1aee290125958c4d283d28.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNw7ihGR2urxb2bgt0B3fXzEu8QCNzQRUdNTz8JsA8jYkT5Z67CBwaijuAVnFK-9sLhI';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>So we have a few monkeys for you to color as well as Banana fruit trees bunches of bananas and some very easy line art for the younger kids to color.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Banana Coloring Pages Best Coloring Pages For Kids Easy Coloring Pages Fruit Coloring Pages Coloring Pages For Kids" src="https://i.pinimg.com/originals/e4/76/77/e47677f016de6c5a8b37bdba9c7cf4fc.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc3P5vb4Z0scpJbL7ORb82NwgywskP1RnkAeFGX-QqdFlrTQISSi2n3PFlDEk6S-tLSIo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Banana Coloring Pages For Kids.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Banana Coloring Pages To Print Free Coloring Sheets Minion Coloring Pages Coloring Pages To Print Cute Coloring Pages" src="https://i.pinimg.com/originals/28/c8/8d/28c88dfb357077ef2720350de45a67f1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRKvZwWNpOfJGdanEPFXK5k8eI8zvPjAVsTazgOuWrlvq_rBYTt6X4TD6VDfqzugRwLQE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Some of the coloring page names are Banana bunch coloring for kids netart Two pieces of banana bunch coloring netart Great and tasty banana coloring muz sanat muzlar ve boyama sayfalar Big banana bunch coloring netart Great and tasty banana coloring for kids fruit coloring Three banana bunch coloring netart Peeling banana bunch coloring.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="One Banana Fruits Coloring Pages Fruit Coloring Pages Food Coloring Pages Fruit Printables" src="https://i.pinimg.com/originals/94/13/75/94137568ef87001db15c3337c60f3982.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt8jbeQw6KPX8VXUfoOocpeuBRIyf4Ak6gfpdoYA4DcyTPTN9noLL9DhIyHjdNmD9zy9g';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Whether you eat them solely for health reasons or because of you just like the taste bananas definitely deliver nutrients and vitamins.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Banana Outline Cliparts Download Free Clip Art Free Clip Art On Clipart Library Star Coloring Pages Kids Printable Coloring Pages Fruit Coloring Pages" src="https://i.pinimg.com/originals/6b/09/31/6b0931f513db72d496e957e2c28369e6.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQBwy4uwAOcb0FQdQ00bt96Qn6AGEjrmz5FS9ew9g0gG65jZoLhb6Elk7RX9wPJxOCUlg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Banana coloring and drawing page.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Banana Coloring Page Coloring Pages Coloring Bananas Page Color Banana Fruit Coloring Pages Farm Animal Coloring Pages Coloring Pages" src="https://i.pinimg.com/originals/fe/87/ff/fe87ff8dbb03c428a68113cdef9d7006.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9BxPFmGieQDX7rd4Zow-v63LwqYY_aQroTqkRtoXWimp9t4sSUBUssmQHhE7u7f5w1w';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>So we have a few monkeys for you to color as well as Banana fruit trees bunches of bananas and some very easy line art for the younger kids to color.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/bmw-coloring-book.html"><i>&larr; bmw coloring book</i></a>
+                                                                    
+                                        <a href="/cars-movie-coloring-pages.html"><i>cars movie coloring pages &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4550379,4,1,120,40,00010100']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4550379&101" alt="counter hit make" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://www.achievablecpmrevenue.com/w4cv6agf?key=67b97f670ac94da11cbf9b0990a19d51', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

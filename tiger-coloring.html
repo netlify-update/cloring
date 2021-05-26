@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Tiger Coloring
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mason"
+  },
+  "headline": "Tiger Coloring",
+  "datePublished": "2021-05-26",
+  "image": "https://i.pinimg.com/originals/0f/8b/cc/0f8bccadc7f9654f5a0a159e7f2c3742.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Free Coloring Image",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=tiger+coloring",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Tiger Coloring
+            </a>
+        </h1>
+        <p>
+                            Free Coloring Image Discuss Find Inpiraion for Education.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Tiger Coloring</strong>. You can now print this beautiful mandala tiger adult animal coloring page or color online for free. Schau dir unsere Auswahl an tiger coloring an um die tollsten einzigartigen oder spezialgefertigten handgemachten Stcke aus unseren Shops zu finden.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/69/06/a9/6906a9495bf8f7229724562196a55444.gif" alt="Free Printable Tiger Coloring Pages For Kids Dragon Coloring Page Animal Coloring Pages Tiger Pictures" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdAZq045TaF_lc9DPWuX8SYIkSy0fhwiEevFyQo2cuf7uX03og9O76IvpvaWFo6VNFmo8';">
+        <figcaption>Free Printable Tiger Coloring Pages For Kids Dragon Coloring Page Animal Coloring Pages Tiger Pictures from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Did you know. The tiger is a member of the. Get the printable Daniel Tiger coloring pictures on this page.
+    </p>
+    <h3>It is for this reason that these wild cats are loved and feared by kids alike.</h3>
+    <p>In this section find a large selection of coloring pages Tiger. It is for this reason that these wild cats are loved and feared by kids alike. Get the printable Daniel Tiger coloring pictures on this page. Here are fun free printable tiger coloring pages for children.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tiger Wild Animals Coloring Pages For Kids Printable Free Farm Animal Coloring Pages Coloring Pictures Of Animals Animal Coloring Pages" src="https://i.pinimg.com/originals/70/f6/b7/70f6b7d72fe61d3458cd49cf50649965.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT461nXIpckZHn_1m0WMwl1ZU1bH9A0TMTh0iK4AJtDKfhsgaE_uEevqlJIi4eCAwHs0z4';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Spiele jetzt Angry Tiger Coloring kostenlos auf LittleGames.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Coloring Page Tiger Jpg 1000 1333 Lion Coloring Pages Animal Coloring Pages Bear Coloring Pages" src="https://i.pinimg.com/originals/90/33/43/90334322c2e9f4244d44f25c85ab25dd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMKiWMX5Rp992oqpqOx2jnzNKFclZpSHnRa5UgBF6mIAJs448RAV1tphBJGhjxkuLdWs';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>You can now print this beautiful mandala tiger adult animal coloring page or color online for free.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tiger Coloring Pages Ideas With Awesome Pattern Free Coloring Sheets Tiger Drawing For Kids Tiger Drawing Animal Coloring Pages" src="https://i.pinimg.com/originals/bb/36/f6/bb36f643dbca534d620a21ca613008ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibRJ_4kl1X4zfMk68CJ4WTuCpb9cCVDR4CPmRpYYI5vKl8ohL6eVl6IY6pLFaoL5q4Wc';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Here are fun free printable tiger coloring pages for children.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Little Tiger Coloring Page Coloring Pages Farm Coloring Pages Disney Coloring Pages" src="https://i.pinimg.com/originals/15/4c/70/154c70f2057ae2782dbc989b6a029eb3.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerFBsDXSXMbxxlfZshflkPLKanqZ-IyO2NFh4jY0LSFUQJa_x0hMA7ktWPo22mMax_Ow';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Here are fun free printable tiger coloring pages for children.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Standing Bengal Tiger Coloring Page From Tigers Category Select From 20946 Printable Crafts Of Cartoons Coloring Pages Cat Coloring Page Animal Coloring Pages" src="https://i.pinimg.com/originals/63/6a/bd/636abd0c042a301ae6d2bb1d0ba6d02b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPi4ktebr8-km02qzk7Xc4CzzQjnX9p0FbY4HPaC86hjKyPd7RBwj-WAXlECep9VObweE';" />
+        <small>Source: es.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Rintoo coloring page from the show Ni Hao.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Realistic And Detailed Coloring Page Of Tiger For Older Kids Letscolorit Com Coloring Pictures Of Animals Zoo Animal Coloring Pages Detailed Coloring Pages" src="https://i.pinimg.com/originals/75/09/90/750990f31fede539b8e26409b8cb6303.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyE3TEGMM8Kc48hz-L6su37edjDVUOWFVgqzAr6xQ2rAQPvfbwrdBZGbGWPqK1B8y9odg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Daniel is a shy curious and brave four-year-old tiger who lives a full childhood of learning.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Top 20 Free Printable Tiger Coloring Pages Online Zoo Animal Coloring Pages Coloring Pages Zebra Coloring Pages" src="https://i.pinimg.com/originals/43/63/1d/43631d2d80e11d501b4be00099934b02.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTI10ZH1gdKc4vkbJUgs12-RWX2FkDncbnjKpgrF9U9f81cow89OcBeHudrUzogTPR7kc';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Cartoon Tiger Coloring Page.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tiger Coloring Pages Ideas With Awesome Pattern Free Coloring Sheets Cartoon Coloring Pages Animal Coloring Pages Cute Coloring Pages" src="https://i.pinimg.com/originals/0f/8b/cc/0f8bccadc7f9654f5a0a159e7f2c3742.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRMQb-ynTTdCMCLEWNG0Pdt-gZ7g9vbpTXzB2NE1KEXKGfh3RHNEqSv47-bKi5WtLYZKY';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Rintoo coloring page from the show Ni Hao.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Baby Tiger Coloring Page Animal Coloring Pages Giraffe Coloring Pages Coloring Pages" src="https://i.pinimg.com/originals/60/57/63/605763ac25bd7afff5884bc213c9f992.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrS1uu0AtkE6CPBpgc1rVpkR3nOH3Pb5b7E9tD5xOChMsKM3RyFGd5iT4D4GeUAfh-atA';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Angry Tiger Coloring ist gratis zum spielen verfgbar.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/coloring-book-trucks.html"><i>&larr; coloring book trucks</i></a>
+                                                                    
+                                        <a href="/bird-colouring-pages.html"><i>bird colouring pages &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4550379,4,1,120,40,00010100']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4550379&101" alt="counter hit make" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://www.achievablecpmrevenue.com/w4cv6agf?key=67b97f670ac94da11cbf9b0990a19d51', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
